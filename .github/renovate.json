@@ -27,6 +27,11 @@
       "commitMessageExtra": "to {{newValue}}"
     },
     {
+      "description": "Dockerfile ARGs pin image components, so title their PRs \"Update <name> to <version>\"",
+      "matchManagers": ["custom.regex"],
+      "commitMessageTopic": "{{depName}}"
+    },
+    {
       "description": "GitHub Actions: weekly with a 7 day cooldown, like Dependabot did",
       "matchManagers": ["github-actions"],
       "addLabels": ["github_actions"],
