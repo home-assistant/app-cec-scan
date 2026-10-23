@@ -3,7 +3,7 @@ ARG BUILD_FROM=ghcr.io/home-assistant/base:3.23-2026.10.1@sha256:9fd5d40f0682f0d
 FROM $BUILD_FROM
 
 # Build libcec for HDMI-CEC
-ARG LIBCEC_VERSION=7.1.1
+ARG LIBCEC_VERSION=8.1.7
 WORKDIR /usr/src
 RUN \
     apk add --no-cache \
